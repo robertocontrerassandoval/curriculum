@@ -1,28 +1,178 @@
-nav {
-  background-color: #D6E0E8;
-  padding: 15px;
-  text-align: start;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+*{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-nav a {
-  color: #4F4F4F; /* Color claro para los enlaces */
-  margin: 0 15px;
-  text-decoration: none;
-  font-size: 18px;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+  
+  /* Fondo semi-transparente con color y opacidad */
+  background-color: rgba(255, 255, 255, 0.7); /* Blanco con 70% de opacidad */
+  
+  /* Agregar la imagen de fondo */
+  background-image: url('https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Ruta a tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra toda el área */
+  background-position: center center; /* Centra la imagen en el fondo */
+  background-attachment: fixed; /* Hace que la imagen de fondo no se desplace al hacer scroll */
+}
+
+/* Estilo general para el nav */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Coloca las secciones a los extremos */
+  padding: 10px 20px;
+  background-color: #f9f9f9; /* Fondo suave para la barra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra suave en la barra */
+  border-radius: 8px; /* Bordes redondeados para la barra */
+}
+
+/* Contenedor para los enlaces de la izquierda */
+.navbar .left {
+  display: flex;
+  gap: 20px; /* Espaciado entre los enlaces */
+  background-color: #538392; /* Azul oscuro */
+  padding: 10px;
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+}
+
+/* Contenedor para los enlaces de la derecha */
+.navbar .right {
+  display: flex;
+  gap: 20px; /* Espaciado entre los enlaces */
+  background-color: #6295A2; /* Azul claro */
+  padding: 10px;
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+}
+
+/* Estilo para los enlaces */
+.navbar a {
+  color: #ffffff; /* Color del texto blanco */
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold;
   padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Bordes redondeados para los enlaces */
+  transition: all 0.3s ease; /* Transición suave */
 }
 
-/* Estilo para el enlace activo */
-nav a.active {
-  background-color: #C4D1D9; /* Color para el enlace activo */
-  color: #4F4F4F;
+/* Estilo para los enlaces activos */
+.navbar .active {
+  background-color: #80B9AD; /* Aqua pastel para los enlaces activos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para los enlaces activos */
 }
 
-/* Hover effect */
-nav a:hover {
-  background-color: #D6E0E8; /* Color para cuando se pasa el mouse */
-  color: #2E2E2E;
+/* Opcional: hover para los enlaces */
+.navbar a:hover {
+  background-color: #B3E2A7; /* Verde pastel suave al pasar el ratón */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+}
+
+
+/* Home.css */
+
+
+.home {
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(244, 244, 244, 0.8); /* Fondo con opacidad de 80% */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.9; /* Esto hará que el contenedor sea 10% más transparente */
+
+}
+
+/* Estilo para el encabezado "Hola, soy" */
+.home h4 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el nombre */
+.home h1 {
+  font-size: 3.5rem;
+  color: #4CAF50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Estilo para el subtítulo "Desarrollador Web Full Stack" */
+.home h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* Estilo para el párrafo de presentación */
+.home p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+
+/* Footer.css */
+
+/* Contenedor del footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-top: 2px solid #ccc;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Estilo para el texto */
+.footer p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Contenedor de los iconos */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* Estilo para los iconos */
+.footer-icons a {
+  color: #333;
+  
+}
+
+.whatsapp-link:hover {
+  transform: scale(1.2);
+  color: #4CAF50;  /* Cambia el color al pasar el ratón */
+}
+
+.linkedin-link:hover {
+  transform: scale(1.2);
+  color: #1f29ea;  /* Cambia el color al pasar el ratón */
+}
+
+.github-link:hover {
+  transform: scale(1.2);
+  color: #0b0d0b;  /* Cambia el color al pasar el ratón */
 }

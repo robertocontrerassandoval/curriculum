@@ -7,6 +7,7 @@ import Contacto from './views/Contacto.jsx';
 import { useContext } from "react";
 import { UserContext } from "./contexts/UserContext.jsx";
 import Navbar from "./components/NavBar.jsx";
+import Footer from './components/Footer.jsx';
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
        />
 
      </Routes>
+     <Footer />
   </div>
   );
   };
