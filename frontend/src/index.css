@@ -35,7 +35,7 @@ body {
 .image-overlay {
   position: absolute; /* Coloca la imagen encima del fondo */
   z-index: 1; /* Asegura que la imagen esté encima */
-  top: -31%; /* Ajusta la posición vertical */
+  top: -21%; /* Ajusta la posición vertical */
   left: 45%;
   transform: translateX(-2%) scale(0.5); /* Centra la imagen horizontalmente */
   max-width: 80%; /* Ajusta el tamaño */
@@ -43,6 +43,7 @@ body {
 }
 
 /* Estilos para el contenido */
+.home
 h1,
 h3,
 h4,
@@ -59,11 +60,13 @@ p {
   background-color: #f9f9f9; /* Fondo suave para la barra */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra suave en la barra */
   border-radius: 8px; /* Bordes redondeados para la barra */
+  height: 70px;
 }
 
 /* Contenedor para los enlaces de la izquierda */
 .navbar .left {
   display: flex;
+  align-items: center;
   gap: 20px; /* Espaciado entre los enlaces */
   background-color: #538392; /* Azul oscuro */
   padding: 10px;
@@ -74,6 +77,7 @@ p {
 /* Contenedor para los enlaces de la derecha */
 .navbar .right {
   display: flex;
+  align-items: center;
   gap: 20px; /* Espaciado entre los enlaces */
   background-color: #6295a2; /* Azul claro */
   padding: 10px;
@@ -201,4 +205,60 @@ p {
 .github-link:hover {
   transform: scale(1.2);
   color: #0b0d0b; /* Cambia el color al pasar el ratón */
+}
+
+#experience {
+  margin: 40px;
+  padding: 20px;
+  background-color: #f4f4f4; /* Fondo gris claro */
+  border-radius: 8px;
+}
+
+#experience h2 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.job {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.company {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.responsibilities {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.responsibilities li {
+  font-size: 1em;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.responsibilities li::before {
+  content: '•';
+  color: #4CAF50; /* Color de los puntos */
+  margin-right: 8px;
+}
+
+.job:hover {
+  background-color: #e0f7fa; /* Cambio de fondo cuando el mouse pasa sobre el trabajo */
+  transition: background-color 0.3s ease;
 }
