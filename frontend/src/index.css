@@ -1,4 +1,4 @@
-*{
+* {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -6,20 +6,49 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #333;
   padding: 20px;
-  
-  /* Fondo semi-transparente con color y opacidad */
-  background-color: rgba(255, 255, 255, 0.7); /* Blanco con 70% de opacidad */
-  
-  /* Agregar la imagen de fondo */
-  background-image: url('https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Ruta a tu imagen */
-  background-size: cover; /* Asegura que la imagen cubra toda el área */
-  background-position: center center; /* Centra la imagen en el fondo */
-  background-attachment: fixed; /* Hace que la imagen de fondo no se desplace al hacer scroll */
+}
+.background-container {
+  position: relative;
+  min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Fondo semi-transparente con opacidad */
+  background-image: url("https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; /* Hace que la imagen no se mueva al hacer scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos para la imagen sobre el fondo */
+.image-overlay {
+  position: absolute; /* Coloca la imagen encima del fondo */
+  z-index: 1; /* Asegura que la imagen esté encima */
+  top: -31%; /* Ajusta la posición vertical */
+  left: 45%;
+  transform: translateX(-2%) scale(0.5); /* Centra la imagen horizontalmente */
+  max-width: 80%; /* Ajusta el tamaño */
+  height: auto;
+}
+
+/* Estilos para el contenido */
+h1,
+h3,
+h4,
+p {
+  z-index: 2; /* Asegura que el contenido de texto esté por encima de la imagen */
+  color: rgb(14, 13, 13); /* Asegura que el texto sea legible */
 }
 
 /* Estilo general para el nav */
@@ -46,7 +75,7 @@ body {
 .navbar .right {
   display: flex;
   gap: 20px; /* Espaciado entre los enlaces */
-  background-color: #6295A2; /* Azul claro */
+  background-color: #6295a2; /* Azul claro */
   padding: 10px;
   border-radius: 5px; /* Bordes redondeados */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
@@ -64,32 +93,31 @@ body {
 
 /* Estilo para los enlaces activos */
 .navbar .active {
-  background-color: #80B9AD; /* Aqua pastel para los enlaces activos */
+  background-color: #80b9ad; /* Aqua pastel para los enlaces activos */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para los enlaces activos */
 }
 
 /* Opcional: hover para los enlaces */
 .navbar a:hover {
-  background-color: #B3E2A7; /* Verde pastel suave al pasar el ratón */
+  background-color: #b3e2a7; /* Verde pastel suave al pasar el ratón */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
 }
 
-
 /* Home.css */
-
 
 .home {
   text-align: center;
   padding: 5px;
   background-color: rgba(244, 244, 244, 0.8); /* Fondo con opacidad de 80% */
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   opacity: 0.9; /* Esto hará que el contenedor sea 10% más transparente */
-
+  width: 90%;
 }
 
 /* Estilo para el encabezado "Hola, soy" */
@@ -102,7 +130,7 @@ body {
 /* Estilo para el nombre */
 .home h1 {
   font-size: 3.5rem;
-  color: #4CAF50;
+  color: #4caf50;
   margin-bottom: 15px;
   font-weight: 600;
 }
@@ -124,7 +152,6 @@ body {
   margin-bottom: 30px;
   padding: 0 20px;
 }
-
 
 /* Footer.css */
 
@@ -159,20 +186,19 @@ body {
 /* Estilo para los iconos */
 .footer-icons a {
   color: #333;
-  
 }
 
 .whatsapp-link:hover {
   transform: scale(1.2);
-  color: #4CAF50;  /* Cambia el color al pasar el ratón */
+  color: #4caf50; /* Cambia el color al pasar el ratón */
 }
 
 .linkedin-link:hover {
   transform: scale(1.2);
-  color: #1f29ea;  /* Cambia el color al pasar el ratón */
+  color: #1f29ea; /* Cambia el color al pasar el ratón */
 }
 
 .github-link:hover {
   transform: scale(1.2);
-  color: #0b0d0b;  /* Cambia el color al pasar el ratón */
+  color: #0b0d0b; /* Cambia el color al pasar el ratón */
 }
