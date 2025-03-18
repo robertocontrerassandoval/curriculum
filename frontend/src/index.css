@@ -227,7 +227,17 @@ p {
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Las hacemos invisibles al principio */
+  transform: translateY(50px); /* Las desplazamos un poco hacia abajo */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Animaciones de transición */
 }
+
+/* Animación cuando las secciones de trabajo son visibles */
+.job.visible {
+  opacity: 1;
+  transform: translateY(0); /* Las movemos a su posición original */
+}
+
 
 .job h3 {
   font-size: 1.5em;
