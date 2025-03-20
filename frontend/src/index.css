@@ -43,8 +43,7 @@ body {
 }
 
 /* Estilos para el contenido */
-.home
-h1,
+.home h1,
 h3,
 h4,
 p {
@@ -238,7 +237,6 @@ p {
   transform: translateY(0); /* Las movemos a su posición original */
 }
 
-
 .job h3 {
   font-size: 1.5em;
   color: #333;
@@ -263,12 +261,83 @@ p {
 }
 
 .responsibilities li::before {
-  content: '•';
-  color: #4CAF50; /* Color de los puntos */
+  content: "•";
+  color: #4caf50; /* Color de los puntos */
   margin-right: 8px;
 }
 
 .job:hover {
   background-color: #e0f7fa; /* Cambio de fondo cuando el mouse pasa sobre el trabajo */
   transition: background-color 0.3s ease;
+}
+
+.curriculum {
+  display: flex;
+}
+
+.banner-curriculum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 0px 30px 30px 30px;
+  border-radius: 8px 0px 0px 8px;
+  flex: 40%; /* Ocupa el 50% del espacio disponible */
+  background-color: #262626; /* Solo un color de ejemplo */
+  display: flex;
+  height: auto; /* Asegúrate de que ocupe el 100% de la altura disponible */
+}
+
+.content-curriculum {
+  flex: 60%; /* Ocupa el 50% del espacio disponible */
+  background-color: #f2f2f2; /* Solo un color de ejemplo */
+  border-radius: 0px 10px 10px 0px;
+}
+
+.banner-curriculum img {
+  max-width: 40%; /* Asegura que la imagen no sobrepase el contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-width: 0px 1px 1px 1px; /* Superior, derecho, inferior, izquierdo */
+  border-style: solid; /* Definir el estilo de la línea */
+  border-color: #000; /* Color de la línea */
+}
+.separador-banner {
+  border: none; /* Elimina el borde predeterminado */
+  border-top: 2px solid #f2e8b3; /* Crea una línea de 2px de grosor */
+  width: 20%; /* Establece el ancho de la línea a un 50% del contenedor */
+  margin-left: 0; /* Alinea la línea a la izquierda */
+  margin-top: 20px; /* Espacio arriba */
+  margin-bottom: 20px; /* Espacio abajo */}
+
+.banner-curriculum h4 svg {
+  
+  color: #f2bb13; /* Cambia a cualquier color que desees */
+  margin-right: 10px; 
+}
+
+.banner-curriculum h3,
+.banner-curriculum h4,
+.banner-curriculum p
+ {
+  color: #f2f2f2;
+  display: flex;           /* Utiliza Flexbox para alinear el contenido */
+  align-items: center;     /* Centra los elementos verticalmente */
+  justify-content: flex-start;  
+}
+
+.banner-curriculum li {
+  color: #f2f2f2;
+}
+
+.content-curriculum h2,
+h4,
+p {
+  color: #262626;
+}
+
+.banner-curriculum img{
+  background-color: #404040;
+  border-color:#f2bb13 ;
+  filter: grayscale(90%); 
 }

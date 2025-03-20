@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./views/Home.jsx";
 import SobreMi from "./views/SobreMi.jsx";
 import Contacto from "./views/Contacto.jsx";
+import Curriculum from "./views/Curriculum.jsx";
 import { useContext } from "react";
 import { UserContext } from "./contexts/UserContext.jsx";
 import Navbar from "./components/NavBar.jsx";
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
 
         <Route path="/sobre-mi" element={<SobreMi />} />
+        <Route path="/curriculum" element={<Curriculum />} />
 
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
