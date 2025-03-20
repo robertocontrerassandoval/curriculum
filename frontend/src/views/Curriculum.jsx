@@ -54,7 +54,8 @@ const Curriculum = () => {
         <h4>Desarrollador web Fullstack JavaScript</h4>
         <br></br>
         <hr className="separador"></hr>
-        <h4>Experiencia Laboral</h4>
+        <h3>Experiencia Laboral</h3>
+        <h4></h4>
       </div>
     </div>
   );

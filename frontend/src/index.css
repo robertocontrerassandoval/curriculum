@@ -283,20 +283,20 @@ p {
   text-align: left;
   padding: 0px 30px 30px 30px;
   border-radius: 8px 0px 0px 8px;
-  flex: 40%; /* Ocupa el 50% del espacio disponible */
+  flex: 25%; /* Ocupa el 50% del espacio disponible */
   background-color: #262626; /* Solo un color de ejemplo */
   display: flex;
   height: auto; /* Asegúrate de que ocupe el 100% de la altura disponible */
 }
 
 .content-curriculum {
-  flex: 60%; /* Ocupa el 50% del espacio disponible */
+  flex: 75%; /* Ocupa el 50% del espacio disponible */
   background-color: #f2f2f2; /* Solo un color de ejemplo */
   border-radius: 0px 10px 10px 0px;
 }
 
 .banner-curriculum img {
-  max-width: 40%; /* Asegura que la imagen no sobrepase el contenedor */
+  max-width: 60%; /* Asegura que la imagen no sobrepase el contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
   border-width: 0px 3px 3px 3px; /* Superior, derecho, inferior, izquierdo */
   border-style: solid; /* Definir el estilo de la línea */
