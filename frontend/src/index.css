@@ -298,9 +298,11 @@ p {
 .banner-curriculum img {
   max-width: 40%; /* Asegura que la imagen no sobrepase el contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
-  border-width: 0px 1px 1px 1px; /* Superior, derecho, inferior, izquierdo */
+  border-width: 0px 3px 3px 3px; /* Superior, derecho, inferior, izquierdo */
   border-style: solid; /* Definir el estilo de la línea */
-  border-color: #000; /* Color de la línea */
+  background-color: #404040;
+  border-color:#F3C215 ;
+  /*filter: grayscale(90%); */
 }
 .separador-banner {
   border: none; /* Elimina el borde predeterminado */
@@ -336,8 +338,4 @@ p {
   color: #262626;
 }
 
-.banner-curriculum img{
-  background-color: #404040;
-  border-color:#f2bb13 ;
-  filter: grayscale(90%); 
-}
+
