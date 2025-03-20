@@ -47,15 +47,24 @@ const Curriculum = () => {
         </section>
       </div>
       <div className="content-curriculum">
-        <h2>Roberto
-            <br></br>
-            Contreras
-        </h2>
-        <h4>Desarrollador web Fullstack JavaScript</h4>
+        <div className="nombre-perfil-cv">
+          <h1><strong>Roberto</strong></h1>
+          <h1><strong>Contreras</strong></h1>
+
+          <h4>Desarrollador web Fullstack JavaScript</h4>
+        </div>
         <br></br>
+       
+        <h2><strong>Experiencia Laboral</strong></h2>
         <hr className="separador"></hr>
-        <h3>Experiencia Laboral</h3>
-        <h4></h4>
+        <div class="trabajo">
+              <h3>Desarrollador Web Full Stack</h3>
+              <p class="company">Marzo 2025 - Actualidad</p>
+              
+              <p class="responsibilities">
+              Recientemente he completado mi formación en Desarrollo Web Fullstack JavaScript, donde adquirí conocimientos y habilidades en las tecnologías más demandadas en el desarrollo web actual. Durante mis estudios, me especialicé en la creación de aplicaciones web utilizando herramientas como React.js para el desarrollo del front-end y Node.js para la construcción del back-end. Además, aprendí a trabajar con bases de datos, integrar APIs y gestionar todo el ciclo de vida de una aplicación web, desde su desarrollo hasta su despliegue.
+              </p>
+            </div>
       </div>
     </div>
   );

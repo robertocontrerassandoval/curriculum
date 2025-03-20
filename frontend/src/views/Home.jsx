@@ -14,6 +14,7 @@ const Home = () => {
             especializo tanto en el desarrollo frontend como backend, utilizando
             tecnologías modernas y prácticas ágiles para entregar soluciones
             eficientes y escalables.
+            Estoy emocionado de aplicar mis habilidades en proyectos reales y seguir aprendiendo y creciendo como desarrollador
           </p>
           <div className="image-overlay">
             <img

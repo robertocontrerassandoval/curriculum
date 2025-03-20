@@ -56,7 +56,7 @@ p {
   display: flex;
   justify-content: space-between; /* Coloca las secciones a los extremos */
   padding: 10px 20px;
-  background-color: #f9f9f9; /* Fondo suave para la barra */
+  background-color: #3F3F3F; /* Fondo suave para la barra */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra suave en la barra */
   border-radius: 8px; /* Bordes redondeados para la barra */
   height: 70px;
@@ -67,7 +67,7 @@ p {
   display: flex;
   align-items: center;
   gap: 20px; /* Espaciado entre los enlaces */
-  background-color: #538392; /* Azul oscuro */
+  background-color: #F2F2F2; /* Azul oscuro */
   padding: 10px;
   border-radius: 5px; /* Bordes redondeados */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
@@ -78,7 +78,7 @@ p {
   display: flex;
   align-items: center;
   gap: 20px; /* Espaciado entre los enlaces */
-  background-color: #6295a2; /* Azul claro */
+  background-color:#F2F2F2 ; /* Azul claro */
   padding: 10px;
   border-radius: 5px; /* Bordes redondeados */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
@@ -86,7 +86,7 @@ p {
 
 /* Estilo para los enlaces */
 .navbar a {
-  color: #ffffff; /* Color del texto blanco */
+  color: #262626; /* Color del texto blanco */
   text-decoration: none; /* Elimina el subrayado */
   font-weight: bold;
   padding: 10px 15px;
@@ -293,6 +293,9 @@ p {
   flex: 75%; /* Ocupa el 50% del espacio disponible */
   background-color: #f2f2f2; /* Solo un color de ejemplo */
   border-radius: 0px 10px 10px 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  
 }
 
 .banner-curriculum img {
@@ -332,10 +335,26 @@ p {
   color: #f2f2f2;
 }
 
+.content-curriculum h1,
 .content-curriculum h2,
-h4,
-p {
+.content-curriculum h3,
+.content-curriculum h4{
+  
+  text-align: left;
   color: #262626;
+  margin: 0px;
+ 
 }
 
+.nombre-perfil-cv {
+  padding: 30px 0px 20px 0px;
+}
+
+.nombre-perfil-cv h1 {
+  font-size: 2.5em;
+}
+
+.trabajo {
+  text-align: justify;
+}
 
