@@ -10,45 +10,8 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
-  padding: 20px;
-}
-.background-container {
-  position: relative;
-  min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.7
-  ); /* Fondo semi-transparente con opacidad */
-  background-image: url("https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; /* Hace que la imagen no se mueva al hacer scroll */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-/* Estilos para la imagen sobre el fondo */
-.image-overlay {
-  position: absolute; /* Coloca la imagen encima del fondo */
-  z-index: 1; /* Asegura que la imagen esté encima */
-  top: -21%; /* Ajusta la posición vertical */
-  left: 45%;
-  transform: translateX(-2%) scale(0.5); /* Centra la imagen horizontalmente */
-  max-width: 80%; /* Ajusta el tamaño */
-  height: auto;
-}
-
-/* Estilos para el contenido */
-.home h1,
-h3,
-h4,
-p {
-  z-index: 2; /* Asegura que el contenido de texto esté por encima de la imagen */
-  color: rgb(14, 13, 13); /* Asegura que el texto sea legible */
+  padding: 5x;
+  margin: 0px;
 }
 
 /* Estilo general para el nav */
@@ -103,54 +66,107 @@ p {
 
 
 /* Home.css */
+.background-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+  background-color: #262626; /* Fondo semi-transparente con opacidad */
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; /* Hace que la imagen no se mueva al hacer scroll */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  border-radius: 8px;
+}
 
 .home {
-  text-align: center;
-  padding: 5px;
-  background-color: rgba(244, 244, 244, 0.8); /* Fondo con opacidad de 80% */
-
+ max-width: 900px;
+  text-align: left;
+  padding: 160px;
+  padding-top: 20px;
+background-image:url(https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ,linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  opacity: 0.9; /* Esto hará que el contenedor sea 10% más transparente */
+  opacity: 0.8; /* Esto hará que el contenedor sea 10% más transparente */
   width: 90%;
+  position: relative;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit; /* Usa la misma imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Aplica el desenfoque */
+  z-index: -1; /* Coloca esta capa por debajo del contenido */
+}
+/* Estilos para el contenido */
+.home h1,
+.home h2,
+.home h3,
+.home h4,
+.home p {
+  z-index: 2; /* Asegura que el contenido de texto esté por encima de la imagen */
+  color: #262626; /* Asegura que el texto sea legible */
 }
 
 /* Estilo para el encabezado "Hola, soy" */
 .home h4 {
+  display: flex;
   font-size: 1.5rem;
-  color: #555;
+text-align: left;
   margin-bottom: 10px;
 }
 
 /* Estilo para el nombre */
 .home h1 {
   font-size: 3.5rem;
-  color: #4caf50;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-weight: 600;
+  text-align: left;
 }
 
 /* Estilo para el subtítulo "Desarrollador Web Full Stack" */
 .home h3 {
   font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 20px;
+ 
+  margin-bottom: 10px;
   font-weight: 400;
 }
 
 /* Estilo para el párrafo de presentación */
 .home p {
   font-size: 1.2rem;
-  color: #666;
-  max-width: 800px;
+
+  max-width: 600px;
   line-height: 1.6;
   margin-bottom: 30px;
-  padding: 0 20px;
+  padding: 0 100px 0 0;
 }
+
+/* Estilos para la imagen sobre el fondo */
+.image-overlay {
+  position: absolute; /* Coloca la imagen encima del fondo */
+  z-index: 1; /* Asegura que la imagen esté encima */
+  top: -10%; /* Ajusta la posición vertical */
+  left: 45%;
+  transform: translateX(-1%) scale(0.5); /* Centra la imagen horizontalmente */
+  max-width: 80%; /* Ajusta el tamaño */
+  height: auto;
+  object-fit: cover; /* Asegura que la imagen no se distorsione */
+  border-color:#F3C215 ;
+}
+
 
 /* Footer.css */
 
@@ -306,10 +322,9 @@ p {
 .separador-banner {
   border: none; /* Elimina el borde predeterminado */
   border-top: 2px solid #f2e8b3; /* Crea una línea de 2px de grosor */
-  width: 20%; /* Establece el ancho de la línea a un 50% del contenedor */
+  width: 30%; /* Establece el ancho de la línea a un 50% del contenedor */
   margin-left: 0; /* Alinea la línea a la izquierda */
-  margin-top: 20px; /* Espacio arriba */
-  margin-bottom: 20px; /* Espacio abajo */}
+}
 
 .banner-curriculum h4 svg {
   

@@ -7,15 +7,25 @@ const Home = () => {
         <div className="home">
           <h4>Hola, soy</h4>
           <h1>Roberto Contreras</h1>
-          <h3>Desarrollador Web Full Stack especializado en JavaScript</h3>
-          <p>
-            Soy un desarrollador web apasionado por crear aplicaciones web
-            dinámicas y funcionales. Con un fuerte enfoque en JavaScript, me
-            especializo tanto en el desarrollo frontend como backend, utilizando
-            tecnologías modernas y prácticas ágiles para entregar soluciones
-            eficientes y escalables.
-            Estoy emocionado de aplicar mis habilidades en proyectos reales y seguir aprendiendo y creciendo como desarrollador
-          </p>
+          <h4>Desarrollador Web Full Stack especializado en JavaScript</h4>
+          {/* <p>
+            Soy Técnico Eléctrico con 15 años de experiencia en el ámbito
+            habitacional e industrial, especializado en instalaciones
+            domiciliarias. A lo largo de mi carrera, he trabajado en diversos
+            proyectos, tanto residenciales como industriales, liderando equipos
+            de trabajo y generando resultados exitosos en la instalación,
+            mantenimiento y reparación de sistemas eléctricos. Mi enfoque
+            siempre ha sido garantizar la seguridad, eficiencia y calidad en
+            cada proyecto. Hace un año, decidí dar un giro a mi carrera
+            profesional y me embarqué en el estudio de Desarrollo Web Full Stack
+            JavaScript, donde he adquirido habilidades clave como HTML, CSS,
+            JavaScript, React, y Node.js, así como el uso de bases de datos como
+            Postgres y herramientas de control de versiones como Git. Con una
+            base sólida en el desarrollo de aplicaciones web dinámicas y
+            escalables, mi objetivo es seguir creciendo como desarrollador,
+            aplicando tanto mis conocimientos técnicos como mi enfoque orientado
+            a la solución de problemas y liderazgo.{" "}
+          </p> */}
           <div className="image-overlay">
             <img
               src={imagenDePerfil}
