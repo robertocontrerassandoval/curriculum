@@ -96,15 +96,11 @@ p {
 
 /* Estilo para los enlaces activos */
 .navbar .active {
-  background-color: #80b9ad; /* Aqua pastel para los enlaces activos */
+  background-color: #FAC70B; /* Aqua pastel para los enlaces activos */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para los enlaces activos */
 }
 
-/* Opcional: hover para los enlaces */
-.navbar a:hover {
-  background-color: #b3e2a7; /* Verde pastel suave al pasar el ratón */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
-}
+
 
 /* Home.css */
 
@@ -358,3 +354,12 @@ p {
   text-align: justify;
 }
 
+.separador-content {
+  border: none; /* Elimina el borde predeterminado */
+  /* Cambia a cualquier color que desees */
+  border-top: 5px solid #FAC70B; /* Crea una línea de 2px de grosor */
+  width: 100%; /* Establece el ancho de la línea a un 50% del contenedor */
+  margin-left: 0; /* Alinea la línea a la izquierda */
+  margin-top: 20px; /* Espacio arriba */
+  margin-bottom: 20px; /* Espacio abajo */
+}

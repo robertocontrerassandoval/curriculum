@@ -9,10 +9,9 @@ const NavBar = () => {
         <div>
         <nav className="navbar">
             <div className="left">
-                <NavLink className={setActiveClass} to="/"> <img src={logo} alt="Logo" />  </NavLink>
+                <NavLink className={setActiveClass} to="/"> RC  </NavLink>
             </div>
             <div className="right">
-                <NavLink className={setActiveClass} to="/"> Home </NavLink>
                 <NavLink className={setActiveClass} to="/sobre-mi"> Sobre Mi </NavLink>
                 <NavLink className={setActiveClass} to="/curriculum"> Curriculum </NavLink>
                 <NavLink className={setActiveClass} to="/contacto"> Contacto </NavLink>
