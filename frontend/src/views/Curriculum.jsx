@@ -45,7 +45,12 @@ const Curriculum = () => {
             <h3>Sobre Mi</h3>
             <hr className="separador-banner"></hr>
             <p>
-            Soy un desarrollador web en formación con pasión por crear aplicaciones web dinámicas. Me especializo en JavaScript, tanto en frontend como backend, y busco aprender y crecer aplicando tecnologías modernas y prácticas ágiles para ofrecer soluciones eficientes.            </p>
+              Soy un desarrollador web en formación con pasión por crear
+              aplicaciones web dinámicas. Me especializo en JavaScript, tanto en
+              frontend como backend, y busco aprender y crecer aplicando
+              tecnologías modernas y prácticas ágiles para ofrecer soluciones
+              eficientes.{" "}
+            </p>
             <br></br>
             <h3>Contacto</h3>
             <hr className="separador-banner"></hr>
@@ -84,13 +89,17 @@ const Curriculum = () => {
             <h4>Desarrollador web Fullstack JavaScript</h4>
           </div>
           <br></br>
+          
+
           <h2>
             <strong>Experiencia Laboral</strong>
           </h2>
           <hr className="separador-content"></hr>
 
           <div className="trabajo">
-            <h3>Técnico en Eléctricidad Industrial.</h3>
+            <h3>
+              <strong>Técnico en Eléctricidad Industrial.</strong>
+            </h3>
             <p className="company">Marzo 2010 - Actualidad</p>
             <p class="responsibilities">
               Como electricista industrial con experiencia en instalaciones
@@ -104,13 +113,61 @@ const Curriculum = () => {
               eléctricos. Además, he implementado soluciones que han generado
               ahorros significativos en el consumo energético.{" "}
             </p>
+            <br></br>
           </div>
+          <div className="trabajo">
+            <h3>
+              <strong>Desarrollador Web Fullstack JavaScript Junior.</strong>
+            </h3>
+            <p className="company">Septiembre 2024 - Actualidad</p>
+            <p class="responsibilities">
+              Soy un desarrollador web con conocimientos en tecnologías frontend
+              y backend, especializado en JavaScript. Apasionado por la creación
+              de aplicaciones web funcionales y dinámicas, busco seguir
+              aprendiendo y desarrollando habilidades técnicas en entornos
+              colaborativos. Experiencia trabajando con React, Node.js y bases
+              de datos MySQL, con enfoque en la implementación de
+              soluciones escalables y optimizadas.
+              <h4> <strong>Habilidades Técnicas:</strong></h4>
+              <ul>
+                <li>Frontend: HTML5, CSS3, JavaScript (ES6+), React, Flexbox, Grid, Boostrap</li>
+                <li>Node.js, Express.js, RESTful APIs, SQL, JWT (Autenticación)</li>
+                <li>Herramientas y Tecnologías: Git, GitHub, NPM</li>
+              </ul>
+            </p>
+          </div>
+
+          <br></br>
+          <br></br>
+          <br></br>         
+          
+          <h2>
+          <strong>Formación Académica</strong>
+          </h2>
+
+          <hr className="separador-content"></hr>
+
+          <div className="trabajo">
+            <h3>
+              <strong>Técnico en Eléctricidad Industrial.</strong>
+            </h3>
+            <h4>Mención Instalaciones Doiciliarias</h4>
+            <h4>INACAP</h4>
+            <p className="company">Marzo 2010 -rectificar Actualidad</p>
+            <p class="responsibilities">
+            Formación técnica especializada en la instalación, mantenimiento y reparación de sistemas eléctricos industriales.
+            </p>
         </div>
+
+
+          </div>
+          
       </div>
 
       {/* Botón para descargar el PDF */}
       <button onClick={descargarPDF}>Descargar PDF</button>
     </div>
+  
   );
 };
 
