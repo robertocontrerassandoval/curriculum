@@ -446,34 +446,41 @@ body {
 /* Contacto.css */
 .contacto-container {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
   text-align: center;
+  font-size: 2rem;
   color: #333;
+  margin-bottom: 20px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
 label {
   font-weight: bold;
+  font-size: 1rem;
   margin-bottom: 8px;
+  color: #333;
 }
 
 input, textarea {
   padding: 10px;
-  font-size: 16px;
+  font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
+  width: 100%;  /* Asegura que los campos ocupen todo el ancho disponible */
+  box-sizing: border-box;  /* Asegura que el padding no haga que el campo se salga del contenedor */
+
 }
 
 input:focus, textarea:focus {
@@ -489,7 +496,7 @@ input:focus, textarea:focus {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .button-contact:hover {

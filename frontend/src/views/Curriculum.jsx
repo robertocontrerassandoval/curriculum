@@ -81,10 +81,10 @@ const Curriculum = () => {
         <div className="content-curriculum">
           <div className="nombre-perfil-cv">
             <h1>
-              <strong>Roberto</strong>
+              <strong>Roberto Contreras</strong>
             </h1>
             <h1>
-              <strong>Contreras</strong>
+              <strong></strong>
             </h1>
             <h4>Desarrollador web Fullstack JavaScript</h4>
           </div>
@@ -151,13 +151,23 @@ const Curriculum = () => {
             <h3>
               <strong>Técnico en Eléctricidad Industrial.</strong>
             </h3>
-            <h4>Mención Instalaciones Doiciliarias</h4>
-            <h4>INACAP</h4>
-            <p className="company">Marzo 2010 -rectificar Actualidad</p>
+            <h4>INACAP Marzo 2010 - Actualidad</h4>
             <p class="responsibilities">
             Formación técnica especializada en la instalación, mantenimiento y reparación de sistemas eléctricos industriales.
             </p>
         </div>
+
+        <div className="trabajo">
+            <h3>
+              <strong>Bootcamp Desarrollo Web Fullstack.</strong>
+            </h3>
+            <h4>Desafio Latam  Marzo 2023 - 2024</h4>
+            <p className="company"></p>
+            <p class="responsibilities">
+              Bootcamp de Desarrollo Web Fullstack con habilidades aplicadas en JavaScript, HTML, CSS, React y Node.js.
+            </p>
+        </div>
+
 
 
           </div>
