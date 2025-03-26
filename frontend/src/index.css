@@ -284,6 +284,8 @@ body {
   color: #0b0d0b; /* Cambia el color al pasar el ratón */
 }
 
+/* estilos para pagina sobre mi */
+
 #experience {
   margin: 40px;
   padding: 20px;
@@ -338,17 +340,14 @@ body {
   color: #555;
 }
 
-.responsibilities li::before {
-  content: "•";
-  color: #4caf50; /* Color de los puntos */
-  margin-right: 8px;
-}
+
 
 .job:hover {
   background-color: #e0f7fa; /* Cambio de fondo cuando el mouse pasa sobre el trabajo */
   transition: background-color 0.3s ease;
 }
 
+ /* Estilo para pagian curriculum */
 .curriculum {
   display: flex;
 }
@@ -443,3 +442,57 @@ body {
   margin-top: 20px; /* Espacio arriba */
   margin-bottom: 20px; /* Espacio abajo */
 }
+
+/* Contacto.css */
+.contacto-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.button-contact {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button-contact:hover {
+  background-color: #45a049;
+}
+

@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import {FaNodeJs, FaReact} from "react-icons/fa";
+import { FaNodeJs, FaReact } from "react-icons/fa";
 
 const SobreMi = () => {
   useEffect(() => {
@@ -54,36 +54,29 @@ const SobreMi = () => {
                 </li>
               </ul>
             </div>
-          </section>
-
-          <section id="experience">
-            <h2>Habilidades y educación</h2>
 
             <div class="job">
-              <h3>Desarrollador Web Full Stack JavaScript  </h3>
-              <p class="company">Desafio Latam 2023 - 2024</p>
-             
-             
-            </div>
-          </section>
-
-          <section id="experience">
-            <h2>Habilidades y educación</h2>
-
-            <div class="job">
-              <h3>Desarrollador Web Full Stack</h3>
-              <p class="company">Marzo 2025 - Actualidad</p>
+              <h3>Representante Legal</h3>
+              <p class="company">Agroferreteria 2009 - 2024</p>
               <ul class="responsibilities">
                 <li>
-                  Desarrollo y mantenimiento de aplicaciones web usando React.js
-                  y Node.js.
+                  Administrador y representate legal de la empresa
+                  Agroferreteria.
+                </li>
+                <li>Vendesor de terreno y materiales de construcción.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <h3>Supervisor Eléctrico</h3>
+              <p class="company">Santa Beatriz año 2009</p>
+              <ul class="responsibilities">
+                <li>
+                  Eléctrico mantenedor industrial en CFI Nueva Aldea, planta
+                  Aserradero.{" "}
                 </li>
                 <li>
-                  Integración de APIs para mejorar la funcionalidad de las
-                  plataformas web.
-                </li>
-                <li>
-                  Colaboración en la creación de proyectos de software a medida.
+                  Supervisor Eléctrico en CFI Nueva Aldea, planta Aserradero.
                 </li>
               </ul>
             </div>
@@ -93,20 +86,30 @@ const SobreMi = () => {
             <h2>Habilidades y educación</h2>
 
             <div class="job">
-              <h3>Desarrollador Web Full Stack</h3>
-              <p class="company">Marzo 2025 - Actualidad</p>
+              <h3>Desarrollador Web Full Stack JavaScript </h3>
+              <p class="company">Desafio Latam 2023 - 2024</p>
               <ul class="responsibilities">
                 <li>
-                  Desarrollo y mantenimiento de aplicaciones web usando React.js
-                  y Node.js.
+                  Curso intensivo que cubre desde fundamentos de JavaScript
+                  hasta aplicaciones completas utilizando Node.js, Express,
+                  MySQL, y React.
+                </li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <h3>Técnico Universitario en Eléctricidad Industrial</h3>
+              <p class="company">INACAP - 2010-2012</p>
+              <ul class="responsibilities">
+                <li>
+                  Proyección y Ejecución de proyectos electricos industriales y
+                  habitacionales en baja tensión.
                 </li>
                 <li>
-                  Integración de APIs para mejorar la funcionalidad de las
-                  plataformas web.
+                  Instalador eléctrico autorizado con licencia SEC clase B.
                 </li>
-                <li>
-                  Colaboración en la creación de proyectos de software a medida.
-                </li>
+                <li>Desarrollador de proyectos eléctrico en baja tensión.</li>
+                <li>Desarrollo de proyectos de automatizacion industrial.</li>
               </ul>
             </div>
           </section>
