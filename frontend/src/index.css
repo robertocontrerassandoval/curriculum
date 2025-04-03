@@ -25,6 +25,21 @@ body {
   height: 70px;
 }
 
+/* Estilo de la hamburguesa */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
 /* Contenedor para los enlaces de la izquierda */
 .navbar .left {
   display: flex;
@@ -65,8 +80,7 @@ body {
 
 /* Home.css */
 .home {
-  display: flex;
-
+  display: flex;;
   justify-content: center;
   align-items: center;
   height: auto;
@@ -129,7 +143,7 @@ body {
 }
 
 .home-image {
-  display: flex;
+
   width: 45%;
   justify-content: flex-end;
   align-items: center;
@@ -502,4 +516,165 @@ input:focus, textarea:focus {
 .button-contact:hover {
   background-color: #45a049;
 }
+
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px; /* Reducir tamaño de fuente para pantallas pequeñas */
+  }
+
+  .navbar {
+    flex-direction: column; /* Cambiar la dirección del navbar a columna */
+    height: auto; /* Eliminar la altura fija */
+    padding: 10px; /* Reducir el padding */
+  }
+
+   /* Ocultar el menú horizontal en pantallas pequeñas */
+   .navbar .left {
+    display: none;
+  }
+
+  /* Mostrar el ícono de la hamburguesa en pantallas pequeñas */
+  .hamburger {
+    display: flex;
+  }
+
+  /* El menú se oculta por defecto */
+  .right {
+    position: absolute;
+    top: 70px; /* Ajustar para que no se superponga con la barra de navegación */
+    right: 0;
+    background-color: #3f3f3f;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  /* Mostrar el menú cuando se activa la clase 'show' */
+  .right.show {
+    display: flex;
+  }
+
+  .navbar a {
+    font-size: 1.2rem;
+  }
+
+
+
+  .home {
+    flex-direction: column-reverse;
+  }
+
+  .home-content {
+    width: 90%; /* Aumentar el ancho del contenido */
+    height: auto; /* Eliminar la altura fija */
+    padding: 20px;
+  }
+
+  .home-image {
+    width: 90%; /* Hacer la imagen más pequeña */
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .home-image img {
+    max-width: 70%; /* Asegura que la imagen no sobrepase el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  .home h1 {
+    font-size: 2rem; /* Reducir tamaño del encabezado */
+  }
+
+  .home p {
+    font-size: 1rem; /* Reducir tamaño del texto */
+    padding: 0 20px; /* Reducir el padding */
+  }
+
+  .home-buttons {
+    flex-direction: column; /* Cambiar los botones a columna */
+    gap: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .footer-icons {
+    gap: 15px;
+  }
+
+  .curriculum {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .banner-curriculum {
+    flex: 100%; /* Hacer que ocupe el 100% del ancho */
+    padding: 10px;
+  }
+
+  .content-curriculum {
+    flex: 100%; /* Hacer que ocupe el 100% del ancho */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contacto-container {
+    max-width: 100%; /* Hacer el formulario más ancho en pantallas pequeñas */
+    margin: 20px;
+    padding: 15px;
+  }
+
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 15px; /* Tamaño de fuente adecuado para tabletas */
+  }
+
+  .home-content {
+    width: 70%; /* Reducir el tamaño en tabletas */
+    
+  }
+
+  .home h1 {
+    font-size: 2rem;
+  }
+  .home h4 {
+    font-size: 1.2rem;
+  }
+
+  .home p {
+    font-size: 1.1rem;
+  }
+
+  .home-buttons {
+    flex-direction: row; /* Alineación horizontal de botones */
+    gap: 15px;
+  }
+
+  .curriculum {
+    flex-direction: row;
+  }
+
+  .banner-curriculum {
+    flex: 40%; /* Reducir el ancho de la imagen en pantallas medianas */
+  }
+
+  .content-curriculum {
+    flex: 60%; /* Ampliar el contenido en pantallas medianas */
+  }
+
+  .footer {
+    padding: 25px 50px; /* Aumentar el padding en tabletas */
+  }
+}
+
+
 
