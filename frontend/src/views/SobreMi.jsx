@@ -37,10 +37,10 @@ const SobreMi = () => {
           <section id="experience">
             <h2>Experiencia Laboral</h2>
 
-            <div class="job">
+            <div className="job">
               <h3>Desarrollador Web Full Stack</h3>
-              <p class="company">Marzo 2025 - Actualidad</p>
-              <ul class="responsibilities">
+              <p className="company">Marzo 2025 - Actualidad</p>
+              <ul className="responsibilities">
                 <li>
                   Desarrollo y mantenimiento de aplicaciones web usando React.js
                   y Node.js.
@@ -55,10 +55,10 @@ const SobreMi = () => {
               </ul>
             </div>
 
-            <div class="job">
+            <div className="job">
               <h3>Representante Legal</h3>
-              <p class="company">Agroferreteria 2009 - 2024</p>
-              <ul class="responsibilities">
+              <p className="company">Agroferreteria 2009 - 2024</p>
+              <ul className="responsibilities">
                 <li>
                   Administrador y representate legal de la empresa
                   Agroferreteria.
@@ -67,10 +67,10 @@ const SobreMi = () => {
               </ul>
             </div>
 
-            <div class="job">
+            <div className="job">
               <h3>Supervisor Eléctrico</h3>
-              <p class="company">Santa Beatriz año 2009</p>
-              <ul class="responsibilities">
+              <p className="company">Santa Beatriz año 2009</p>
+              <ul className="responsibilities">
                 <li>
                   Eléctrico mantenedor industrial en CFI Nueva Aldea, planta
                   Aserradero.{" "}
@@ -85,10 +85,10 @@ const SobreMi = () => {
           <section id="experience">
             <h2>Habilidades y educación</h2>
 
-            <div class="job">
+            <div className="job">
               <h3>Desarrollador Web Full Stack JavaScript </h3>
-              <p class="company">Desafio Latam 2023 - 2024</p>
-              <ul class="responsibilities">
+              <p className="company">Desafio Latam 2023 - 2024</p>
+              <ul className="responsibilities">
                 <li>
                   Curso intensivo que cubre desde fundamentos de JavaScript
                   hasta aplicaciones completas utilizando Node.js, Express,
@@ -97,10 +97,10 @@ const SobreMi = () => {
               </ul>
             </div>
 
-            <div class="job">
+            <div className="job">
               <h3>Técnico Universitario en Eléctricidad Industrial</h3>
-              <p class="company">INACAP - 2010-2012</p>
-              <ul class="responsibilities">
+              <p className="company">INACAP - 2010-2012</p>
+              <ul className="responsibilities">
                 <li>
                   Proyección y Ejecución de proyectos electricos industriales y
                   habitacionales en baja tensión.

@@ -531,7 +531,7 @@ input:focus, textarea:focus {
   }
 
    /* Ocultar el menú horizontal en pantallas pequeñas */
-   .navbar .left {
+   .navbar .left{
     display: none;
   }
 
@@ -552,15 +552,21 @@ input:focus, textarea:focus {
     align-items: center;
     gap: 15px;
     padding: 20px 0;
+    z-index: 3;
+  
   }
+
+  
 
   /* Mostrar el menú cuando se activa la clase 'show' */
-  .right.show {
-    display: flex;
+  .right.show{
+    display: block;
   }
 
+ 
+
   .navbar a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
 
