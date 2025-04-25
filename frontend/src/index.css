@@ -534,6 +534,9 @@ input:focus, textarea:focus {
    .navbar .left{
     display: none;
   }
+  .navbar .right{
+    display: none;
+  }
 
   /* Mostrar el ícono de la hamburguesa en pantallas pequeñas */
   .hamburger {
