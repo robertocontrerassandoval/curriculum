@@ -40,14 +40,18 @@ const NavBar = () => {
         <div className="left">
           <NavLink className={setActiveClass} to="/">RC</NavLink>
         </div>
-
+<div className='menu-line'>
         {/* Icono de la hamburguesa */}
         <div className="hamburger" onClick={toggleMenu} ref={hamburgerRef}>
           <span></span>
           <span></span>
           <span></span>
+         
         </div>
-
+        <div className='line' >
+        <h3>Desarrollando Futuro</h3>
+        </div>
+        </div>
         {/* Menú de navegación */}
         <div ref={menuRef} className={`right ${menuOpen ? 'show' : ''}`}>
           <NavLink className={setActiveClass} to="/">Inicio</NavLink>

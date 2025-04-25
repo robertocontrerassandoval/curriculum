@@ -63,7 +63,7 @@ const SobreMi = () => {
                   Administrador y representate legal de la empresa
                   Agroferreteria.
                 </li>
-                <li>Vendesor de terreno y materiales de construcción.</li>
+                <li>Vendedor de terreno y materiales de construcción.</li>
               </ul>
             </div>
 

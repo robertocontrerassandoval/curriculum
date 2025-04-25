@@ -525,7 +525,10 @@ input:focus, textarea:focus {
   }
 
   .navbar {
-    flex-direction: column; /* Cambiar la dirección del navbar a columna */
+    display: flex;
+    width: 100%;
+    flex-direction: row; /* Cambiar la dirección del navbar a columna */
+border-radius: 0px;
     height: auto; /* Eliminar la altura fija */
     padding: 10px; /* Reducir el padding */
   }
@@ -533,14 +536,35 @@ input:focus, textarea:focus {
    /* Ocultar el menú horizontal en pantallas pequeñas */
    .navbar .left{
     display: none;
+    ;
   }
   .navbar .right{
     display: none;
   }
 
+  .menu-line {
+    display: flex;
+    width: 100%;
+  }
   /* Mostrar el ícono de la hamburguesa en pantallas pequeñas */
   .hamburger {
     display: flex;
+width: 15%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 4;
+  }
+
+  .line {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    
+  }
+  .line h3 {
+    color: #f2f2f2;
   }
 
   /* El menú se oculta por defecto */
