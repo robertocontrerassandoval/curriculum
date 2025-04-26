@@ -3,6 +3,8 @@ import imagenDePerfil from "../assets/img/imagePerfil.png";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
+import { BsGlobe2 } from "react-icons/bs";
+
 import html2pdf from "html2pdf.js"; // Importa la librería html2pdf.js
 
 const Curriculum = () => {
@@ -63,6 +65,15 @@ const Curriculum = () => {
             <h4>
               <FaLocationDot /> Camino Real 5769, Quinchamali, Chillán
             </h4>
+            <h4><BsGlobe2 /> 
+            <a href="http://www.rfcs.cl" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{ color: 'white', textDecoration: 'none'}
+            }>
+        www.rfcs.cl
+      </a>
+      </h4>
             <br></br>
             <h3>Habilidades</h3>
             <hr className="separador-banner"></hr>
