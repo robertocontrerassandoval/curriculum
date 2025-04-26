@@ -521,6 +521,7 @@ input:focus, textarea:focus {
 @media (max-width: 767px) {
   body {
     font-size: 14px; /* Reducir tamaño de fuente para pantallas pequeñas */
+    margin: 0px;
   }
 
   .navbar {
@@ -668,6 +669,7 @@ width: 15%;
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
     font-size: 15px; /* Tamaño de fuente adecuado para tabletas */
+    margin: 0px;
   }
 
   .home-content {
