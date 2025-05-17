@@ -7,6 +7,8 @@ app.listen(3000, () => {
     console.log("¡Servidor encendido! http://localhost:3000/home");
 });
 
+
+
 app.use(express.json()) //declaracion de middleware
 
 app.get("/home", (req, res)=>{
