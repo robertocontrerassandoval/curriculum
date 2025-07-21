@@ -516,6 +516,26 @@ input:focus, textarea:focus {
   background-color: #45a049;
 }
 
+/* estilos portafolio */
+.portafolio {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.proyectos {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.proyecto {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 300px;
+}
+
+
 
 /* Para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {

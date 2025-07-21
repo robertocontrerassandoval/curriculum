@@ -8,6 +8,7 @@ import { useContext } from "react";
 import { UserContext } from "./contexts/UserContext.jsx";
 import Navbar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
+import Portafolio from "./views/Portafolio.jsx";
 
 const App = () => {
   const { user } = useContext(UserContext);
@@ -20,7 +21,7 @@ const App = () => {
 
         <Route path="/sobre-mi" element={<SobreMi />} />
         <Route path="/curriculum" element={<Curriculum />} />
-
+        <Route path="/portafolio" element={<Portafolio />  }/>
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
       <Footer />
