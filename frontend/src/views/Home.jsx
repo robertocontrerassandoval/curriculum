@@ -1,5 +1,5 @@
 import React from "react";
-import imagenDePerfil from "../assets/img/imagenDePerfil1.webp";
+import imagenDePerfil from "../assets/img/imagenPerfil.webp";
 import { NavLink } from "react-router-dom";
 const Home = () => {
 
@@ -15,7 +15,7 @@ const Home = () => {
           <h4>Desarrollador Web Full Stack especializado en JavaScript</h4>
         </div>
         <div className="home-buttons">
-                            <NavLink className={setActiveClass} to="/sobre-mi"> Sobre Mi </NavLink>
+           <NavLink className={setActiveClass} to="/sobre-mi"> Sobre Mi </NavLink>
 
          </div>
           
