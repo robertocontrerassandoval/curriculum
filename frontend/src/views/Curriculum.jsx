@@ -1,5 +1,5 @@
 import React from "react";
-import imagenDePerfil from "../assets/img/imagePerfil.png";
+import imagenDePerfil from "../assets/img/imagenPerfil.webp";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
