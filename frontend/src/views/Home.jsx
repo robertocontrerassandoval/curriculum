@@ -1,5 +1,5 @@
 import React from "react";
-import imagenDePerfil from "../assets/img/imagePerfil.png";
+import imagenDePerfil from "../assets/img/imagenDePerfil1.webp";
 import { NavLink } from "react-router-dom";
 const Home = () => {
 
