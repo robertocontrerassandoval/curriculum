@@ -1,7 +1,7 @@
 const express = require ('express')
 const app = express()
 const fs = require('fs')
-const { agregarContacto, obtenerContactos, modificarContactos } = require("./consultas.js");
+const { agregarContacto, obtenerContactos, modificarContactos, eliminarContactos } = require("./consultas.js");
 
 
 app.listen(3000, () => {
@@ -39,6 +39,13 @@ app.put("/contactos/:id", async (req, res) => {
     await modificarContactos(nombre, correo, asunto, mensaje, id);
     res.json({ mensaje: "Contacto modificado correctamente" });
     
+})
+
+
+app.delete("/contactos/:id", async (req, res) => {
+    const { id } = req.params;
+    await eliminarContactos(id);
+    res.json({ mensaje: "Contacto eliminado correctamente" });
 })
 
 app.get("/home", (req, res)=>{

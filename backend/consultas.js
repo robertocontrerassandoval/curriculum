@@ -51,6 +51,23 @@ const modificarContactos = async (nombre, correo, asunto, mensaje, id) => {
   }
 };
 
+const eliminarContactos = async (id) => {
+    try {
+      const consulta = `
+        DELETE FROM datos 
+        WHERE id = $1
+        RETURNING *;
+      `;
+      const values = [id];
+      const result = await pool.query(consulta, values);   
+      console.log('🛠️ Contacto eliminado:', result.rows[0]);
+      return result.rows[0];
+    } catch (error) {
+      console.error("❌ Error en eliminarContactos:", error.message);
+      throw error;
+    }
+  };
+
 
 
 const getContactos = async () => {
@@ -73,5 +90,6 @@ module.exports = {
     agregarContacto,
     verificarBaseDeDatos,
     obtenerContactos,
-    modificarContactos 
+    modificarContactos,
+    eliminarContactos 
 };
