@@ -115,6 +115,22 @@ const SobreMi = () => {
           </section>
         </div>
       </div>
+      <a
+  href="/Curriculum_Roberto_Contreras.pdf"
+  download
+  className="cv-download-button"
+  style={{
+    display: 'inline-block',
+    padding: '10px 20px',
+    backgroundColor: '#007bff',
+    color: 'white',
+    borderRadius: '5px',
+    textDecoration: 'none',
+    marginBottom: '20px'
+  }}
+>
+  Descargar Currículum
+</a>
     </div>
   );
 };

@@ -56,7 +56,7 @@ const NavBar = () => {
         <div ref={menuRef} className={`right ${menuOpen ? 'show' : ''}`}>
           <NavLink className={setActiveClass} to="/">Inicio</NavLink>
           <NavLink className={setActiveClass} to="/sobre-mi">Sobre Mi</NavLink>
-          <NavLink className={setActiveClass} to="/curriculum">Curriculum</NavLink>
+          {/*<NavLink className={setActiveClass} to="/curriculum">Curriculum</NavLink> */}
           <NavLink className={setActiveClass} to="/portafolio">Portafolio</NavLink>
           <NavLink className={setActiveClass} to="/contacto">Contacto</NavLink>
         </div>
