@@ -15,7 +15,7 @@ const proyectos = [
       "Desarrollo de un sistema distribuido de monitoreo de humedad y temperatura que utiliza microcontroladores ESP32 conectados a sensores ambientales, los cuales se comunican entre sí a través de tecnología LoRa. Un nodo actúa como receptor y gateway, retransmitiendo los datos a un servidor mediante conexión WiFi. Los datos son procesados por un backend en Node.js y almacenados en PostgreSQL, con una interfaz visual responsiva construida en React.",
     tecnologias: ["LoRa", "HTTP", "Node.js", "Express", "Render", "React", "PostgreSQL"],
     enlace: "https://frontend-telemetria.onrender.com",
-    imagen: "/img/imagenTelemetria.webp",
+    imagen: "/img/imagenTelemetria.png",
   },
 ];
 
